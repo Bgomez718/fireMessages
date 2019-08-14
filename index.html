@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
     <title>fireMessage</title>
 
@@ -11,7 +12,26 @@
     <!--Sign in and add a project "fireMessage"-->
     <!--PASTE SNIPPET HERE-->
 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDmHbWNUlbbayYa-5bCjRtU7mx3oDiU_2o",
+    authDomain: "firemessage-b4ba1.firebaseapp.com",
+    databaseURL: "https://firemessage-b4ba1.firebaseio.com",
+    projectId: "firemessage-b4ba1",
+    storageBucket: "firemessage-b4ba1.appspot.com",
+    messagingSenderId: "454121565506",
+    appId: "1:454121565506:web:a3a66625b50a06dc"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 
     <!--custom files-->
     <script src="lib/js/main.js" defer></script>
@@ -20,7 +40,7 @@
 <body>
 
     <!--Add your name-->
-    <h1>Bob's Messaging App</h1>
+    <h1>Welcome to this Blog</h1>
 
     <!--This div will be populated with messages-->
     <div class="allMessages">
@@ -31,13 +51,17 @@
     <div class="userContainer">
         <form>
             <div class="inputContainer">
-                <div class="singleInput">
-                    <label for="username">Your name:</label>
+                <!-- <div class="singleInput">
+                    <label class="title-create" for="username"> Title:</label>
                     <input id="username" type="text">
                 </div>
                 <div class="singleInput">
-                    <label for="message">Message:</label>
+                    <label for="message">Name:</label>
                     <input id="message" type="text">
+                </div> -->
+                <div class="singleInput">
+                    <label for="message">Message:</label>
+                    <input id="story" type="text">
                 </div>
             </div>
             <button id="submitButton">Submit</button>
